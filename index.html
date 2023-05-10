@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Proyecto</title>
+    <link rel="shortcut icon" href="favicon.ico" type="">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navegadorHeader">
+            <div class="logoInicio">
+                <a href="./index.html"><img src="./assets/img/codoacodo.png" alt="Logo">
+                    <h2 class="nomLogo">Conf Bs As</h2>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="anSeleccionada" href="#laConferencia">La conferencia</a></li>
+                    <li><a href="#losOradores">Los oradores</a></li>
+                    <li><a href="#lugarYfecha">El lugar y la fecha</a></li>
+                    <li><a href="#convierteteOradorForm">Conviértete en orador</a></li>
+                    <li><a href="./pages/comprar_tickets.html" target="_blank">Comprar tickets</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="laConferencia" class="laConferencia">
+            <div class="contenido">
+                <h1>Conferencia Bs As</h1>
+                <p>Conf Bs As llega por primera vez a Argentina.Un evento para compartir con
+                    nuestra comunidad el conocimiento y experiencia de los expertos
+                    que están creando el futuro de Internet. Ven a conocer a miembros del
+                    evento, a otros estudiantes de Codo a Codo y los oradores
+                    de primer nivel que tenemos para ti. Te esperamos!
+                </p>
+                <div class="Botones">
+                    <a href="#convierteteOradorForm" class="Enlaceboton">Quiero ser orador</a>
+                    <a href="./pages/comprar_tickets.html" target="_blank" class="Enlaceboton tickets">Comprar
+                        tickets</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="oradores" id="losOradores">
+            <h2 class="title">CONOCE A LOS <br><span>ORADORES</span></h2>
+            <div class="cardSet">
+                <div class="card">
+                    <img src="./assets/img/steve.jpg" alt="Steve Jobs Orador">
+                    <div class="textCard">
+                        <h4 title="JavaScript">JavaScript</h4>
+                        <h4 title="React">React</h4>
+                        <h2>Steve Jobs</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero esse reprehenderit
+                            voluptatibus saepe fugiat facere nisi odit placeat? Aliquam perspiciatis sequi quas
+                            voluptatem
+                            nobis quam exercitationem earum assumenda nisi.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/bill.jpg" alt="Bill Gates Orador">
+                    <div class="textCard">
+                        <h4 title="JavaScript">JavaScript</h4>
+                        <h4 title="React">React</h4>
+                        <h2>Bill Gates</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero esse reprehenderit
+                            voluptatibus saepe fugiat facere nisi odit placeat? Aliquam perspiciatis sequi quas
+                            voluptatem
+                            nobis quam exercitationem earum assumenda nisi.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/ada.jpeg" alt="Ada Lovelace Orador">
+                    <div class="textCard">
+                        <h4 title="Negocios">Negocios</h4>
+                        <h4 title="Startups">Startups</h4>
+                        <h2>Ada Lovelace</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero esse reprehenderit
+                            voluptatibus saepe fugiat facere nisi odit placeat? Aliquam perspiciatis sequi quas
+                            voluptatem
+                            nobis quam exercitationem earum assumenda nisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lugarBsAs" id="lugarYfecha">
+            <div class="imgLugar"></div>
+            <div class="textoLugar">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina,
+                    en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses.
+                    Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla 
+                    Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre
+                    toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie). 
+                </p>
+                <a href="" class="Enlaceboton">Conocé más</a>
+            </div>
+        </section>
+
+        <section id="convierteteOradorForm" class="convierteteOradorForm">
+            <h2 class="title">CONVIÉRTETE EN UN <br><span>ORADOR</span></h2>
+
+            <form action="" method="get" enctype="" id="FormOrador" autocomplete="on">
+
+                <fieldset>
+                    <legend>Anótate como orador para dar una <span class="punteado">charla ignite</span>. Cuéntanos de
+                        qué quieres
+                        hablar!</legend>
+                    <div class="inputsNA">
+                        <input type="text" name="fName" id="fName" placeholder="Nombre" required>
+                        <input type="text" name="fSurname" id="fSurname" placeholder="Apellido" required>
+                    </div>
+                    <div class="textArea">
+                        <textarea name="ftext" form="FormOrador" placeholder="Sobre que quieres hablar?" maxlength="300"
+                            required></textarea>
+                    </div>
+                    <p>Recuerda incluir un titulo para tu charla</p>
+                    <input class="botonEnviar" type="submit" value="Enviar">
+                </fieldset>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navFooter">
+            <ul>
+                <li><a class="dobleLinea" href="">Preguntas <br>frecuentes</a></li>
+                <li><a href="">Contáctanos</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="">Conferencias</a></li>
+                <li><a class="dobleLinea" href="">Términos y <br>condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li><a href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
