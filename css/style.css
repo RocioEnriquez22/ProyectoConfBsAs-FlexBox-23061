@@ -860,8 +860,9 @@ footer{
     }
 
     .imgLugar {
-        background-image: url("/assets/img/pexels-matheus-de-moraes-gugelmim-14401419.jpg");
+        background-image: url("../assets/img/pexels-matheus-de-moraes-gugelmim-14401419.jpg");
     }
+
     .textoLugar{
         padding: 0.8em 1.5em;
         height: auto;
